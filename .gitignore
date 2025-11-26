@@ -27,7 +27,8 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
+# for LaTeX output and Python:
+build/ 
 develop-eggs/
 dist/
 downloads/
