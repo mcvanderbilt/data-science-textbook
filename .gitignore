@@ -1,3 +1,15 @@
+# ------------------------------------------------------
+# Unnamed Data Science Textbook
+# Purpose: .gitignore file for workspace
+#
+# Author: Matthew C. Vanderbilt
+# Created: 25 November 2025
+# Updated: 25 November 2025
+# ------------------------------------------------------
+
+# Ignore research folder that may contain others' products and effort
+/research-closed/
+
 # Ignore R temporary files
 .Rhistory
 .RData
