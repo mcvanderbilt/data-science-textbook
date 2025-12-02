@@ -7,6 +7,9 @@
 # Updated: 25 November 2025
 # ------------------------------------------------------
 
+# Ignore VSCode settings folder
+/.vscode/
+
 # Ignore research folder that may contain others' products and effort
 /research-closed/
 

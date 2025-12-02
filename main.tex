@@ -1,1 +1,63 @@
-\textbf{Master file (imports all chapters)}
+% --> template guidance
+
+\documentclass[12pt]{book}
+
+% ------------------------------
+% Modular Preamble
+% ------------------------------
+\input{preamble/packages}    % load all packages
+\input{preamble/formatting}  % page layout, spacing, headers/footers - setup for KDP
+\input{preamble/commands}    % custom macros
+\input{preamble/metadata}    % title, author, date
+
+% ------------------------------
+% Bibliography
+% ------------------------------
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{bibliography/general.bib}
+\addbibresource{bibliography/chapter1.bib}
+\addbibresource{bibliography/chapter2.bib}
+\addbibresource{bibliography/datasets.bib}
+
+% ------------------------------
+% Document
+% ------------------------------
+\begin{document}
+
+% Title page
+\maketitle
+
+% Additional title information
+\begin{center}
+  {\Subtitle} \\[1em]
+  {\Edition} \\[1em]
+  {\Publisher}, {\Location} \\[1em]
+  ISBN: \ISBN \\[1em]
+  \CopyrightNotice \\[2em]
+  \Dedication
+\end{center}
+
+% content lists
+\tableofcontents
+\listoffigures
+\listoftables
+
+% ------------------------------
+% Chapters
+% ------------------------------
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+% Add more chapters as needed
+
+% ------------------------------
+% Appendices
+% ------------------------------
+\appendix
+\include{appendices/appendixA}
+
+% ------------------------------
+% Bibliography
+% ------------------------------
+\printbibliography
+
+\end{document}

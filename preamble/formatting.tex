@@ -1,1 +1,19 @@
-\textbf{Page style, headers/footers}
+% ------------------------------
+% KDP Formatting Settings
+% ------------------------------
+
+% Trim size (6x9 inches) and margins
+\usepackage[paperwidth=6in,paperheight=9in,margin=1in]{geometry}
+
+% Line spacing
+\usepackage{setspace}
+\onehalfspacing   % 1.5 spacing for readability
+
+% Headers/footers with page numbers
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+
+% PDF/A compliance (embedded fonts, archival standard)
+\usepackage[a-1b]{pdfx}
