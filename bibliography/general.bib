@@ -53,7 +53,7 @@
 }
 
 % -------------------------------
-% Example: Journal Article
+% Journal Article
 % -------------------------------
 @article{duhigg2012,
   author  = {Charles Duhigg},
@@ -164,7 +164,7 @@
 }
 
 % -------------------------------
-% Example: Thesis/Dissertation
+% Thesis/Dissertation
 % -------------------------------
 @phdthesis{fry2004,
   author = {Benjamin J. Fry},
@@ -172,11 +172,6 @@
   school = {Massachusetts Institute of Technology},
   year   = {2004}
 }
-
-
-% =====================================================================
-% =====================================================================
---> template guidance for adding new references
 
 % -------------------------------
 % Example: Conference Paper
@@ -191,12 +186,26 @@
 }
 
 % -------------------------------
-% Example: Online Resource
+% Online Resource
 % -------------------------------
-@misc{nasa2025,
-  author       = {NASA},
-  title        = {Probability and Statistics in Space Missions},
-  howpublished = {\url{https://www.nasa.gov/statistics}},
-  year         = {2025},
-  note         = {Accessed: December 2, 2025}
+@misc{git_gedeck-ps,
+  author       = {Peter Bruce, Andrew Bruce, and Peter Gedeck},
+  title        = {Code repository for O'Reilly book "Practical Statistics for Data Scientists"},
+  howpublished = {\url{https://github.com/gedeck/practical-statistics-for-data-scientists}},
+  year         = {nd},
+  note         = {Accessed: December 3, 2025}
+}
+
+% -------------------------------
+% Example: Dataset (use @misc if @dataset is not supported)
+% -------------------------------
+@dataset{smith2023_covid_data,
+  author       = {Smith, John and Doe, Jane},
+  title        = {Global COVID-19 Case Counts Dataset},
+  year         = {2023},
+  publisher    = {World Health Organization},
+  doi          = {10.1234/WHO.COVID.DATA.2023},
+  url          = {https://data.who.int/covid19/casecounts},
+  note         = {Accessed: 2025-12-03},
+  version      = {2.1},
 }
