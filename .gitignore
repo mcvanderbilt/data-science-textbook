@@ -10,7 +10,7 @@
 # Ignore VSCode settings folder
 /.vscode/
 
-# Ignore research folder that may contain others' products and effort
+# Ignore closed research folder
 /research-closed/
 
 # Ignore R temporary files
